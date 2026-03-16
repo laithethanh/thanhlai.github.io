@@ -1,21 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to My Portfolio</title>
+  <meta charset="UTF-8" />
+  <title>My Portfolio - IT Developer</title>
   <style>
-    body { font-family: Arial; padding: 40px; background: #f4f4f4; }
-    h1 { color: #333; }
-    .card {
-      background: white; padding: 20px; border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 600px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .container {
+      width: 85%;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    h2 {
+      border-left: 5px solid #111;
+      padding-left: 10px;
+    }
+
+    .about, .skills, .projects, .experience, .contact {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Skills */
+    .skill-tags span {
+      background: #111;
+      color: white;
+      padding: 7px 12px;
+      margin: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    /* Projects */
+    .project-card {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+
+    .project-card h3 {
+      margin: 0 0 10px 0;
+    }
+
+    .project-card a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    /* Contact */
+    .contact a {
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .cv-btn {
+      background: #111;
+      color: white;
+      padding: 12px 25px;
+      display: inline-block;
+      margin-top: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Hello 👋. My name is Lai The Thanh</h1>
-    <p>Welcome to my first GitHub Pages website!</p>
+
+<header>
+  <h1>👨‍💻 Lại Thế Thành</h1>
+  <p>Frontend Developer | Backend Developer | Fullstack | ReactJS | NodeJS</p>
+</header>
+
+<div class="container">
+
+  <!-- ABOUT -->
+  <div class="about">
+    <h2>About Me</h2>
+    <p>
+      Xin chào! Tôi là lập trình viên Web với kinh nghiệm xây dựng ứng dụng thực tế
+      bằng ReactJS, NodeJS, Express, MongoDB, MySQL.  
+      Tôi luôn mong muốn tạo ra sản phẩm tối ưu, UI đẹp, UX mượt và dễ mở rộng.
+    </p>
   </div>
+
+  <!-- SKILLS -->
+  <div class="skills">
+    <h2>Skills</h2>
+    <div class="skill-tags">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      <span>ReactJS</span>
+      <span>NodeJS</span><span>Express</span><span>MySQL</span>
+      <span>MongoDB</span><span>Git / GitHub</span>
+      <span>RESTful API</span>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>📦 Ecommerce Website</h3>
+      <p>ReactJS + NodeJS + MongoDB — đầy đủ chức năng đăng nhập, giỏ hàng, thanh toán, admin dashboard.</p>
+      <a href="https://github.com/yourname/project-ecommerce" target="_blank">
+        🔗 GitHub Source
+      </a>
+    </div>
+
+    <div class="project-card">
+      <h3>🏨 Hotel Booking App</h3>
+      <p>Ứng dụng đặt phòng khách sạn: đặt lịch, tìm kiếm, thanh toán online.</p>
+      <a href="https://github.com/yourname/hotel-app" target="_blank">
+        🔗 GitHub Source
+      </a>
+    </div>
+
+    <div class="project-card">
+      <h3>🛠 Quản lý phòng trọ</h3>
+      <p>ReactJS + NodeJS + Express + MySQL + JWT — CRUD phòng, người thuê, hóa đơn...</p>
+      <a href="https://github.com/yourname/phongtro-app" target="_blank">
+        🔗 GitHub Source
+      </a>
+    </div>
+
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="experience">
+    <h2>Experience</h2>
+    <p>✔ Intern / Fresher Developer tại Công ty ABC (2023 - 2024)</p>
+    <p>✔ Tham gia dự án Web App quản lý bán hàng bằng React + Node</p>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:laithanh1006@gmail.com">laithanh1006@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/laithethanh" target="_blank">github.com/laithethanh</a></p>
+    <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourname</a></p>
+
+    <a class="cv-btn" href="LaiTheThanh_FullStackDeveloper.pdf" target="_blank">📄 Download CV</a>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Lai The Thanh — Portfolio Developer
+</footer>
+
 </body>
 </html>
